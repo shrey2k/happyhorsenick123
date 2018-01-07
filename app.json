@@ -1,0 +1,28 @@
+{
+  "name": "ghostaio",
+  "description": "The admin microservice of ghostaio",
+  "website": "http://www.forestadmin.com/lumber",
+  "repository": "https://github.com/ForestAdmin/lumber",
+  "env": {
+    "FOREST_AUTH_SECRET": {
+      "description": "A random JWT signing secret to protect your admin API",
+      "value": "de78ec76daa305cd4327a84bad4bad8520d4ffe023ac668ead1718bfd6a1a5698e855da1ff46c76d0bfa589f2e9eefee"
+    },
+    "FOREST_ENV_SECRET": {
+      "description": "The Forest environment secret",
+      "value": "be5a7b3c3d93c66b7194a84a7e2fd84af76d308074ba695f0bd9de8955f0cc54"
+    },
+    "DATABASE_URL": {
+      "description": "The remote database connection URL",
+      "value": "postgres://<user>:<password>@<host>:<port>/<databaseName>"
+    },
+    "SSL_DATABASE": {
+      "description": "Specify if a SSL database connection is required.",
+      "value": "true"
+    },
+    "ENCRYPT_DATABASE": {
+      "description": "Specify if the database connection is encrypted.",
+      "value": "false"
+    }
+  }
+}
